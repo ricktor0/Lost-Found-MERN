@@ -14,7 +14,7 @@ dotenv.config();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://lost-found-frontend.onrender.com/",
+    origin: "https://lost-found-frontend.onrender.com",
     credentials: true,
   })
 );
