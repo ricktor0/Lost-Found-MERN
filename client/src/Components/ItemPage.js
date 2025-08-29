@@ -47,7 +47,7 @@ function ItemPage() {
   useEffect(() => {
     setloading(true);
     axios({
-      url: `http://localhost:4000/items/${item_id}`,
+      url: `https://lost-found-backend-qt0o.onrender.com/items/${item_id}`,
       method: "GET",
     })
       .then((response) => {
@@ -282,7 +282,7 @@ function ItemPage() {
   const delete_item = () => {
     console.log("deleted");
     axios({
-      url: `http://localhost:4000/items/delete/${item_id}`,
+      url: `https://lost-found-backend-qt0o.onrender.com/items/delete/${item_id}`,
       method: "DELETE",
     })
       .then((response) => {
@@ -367,7 +367,7 @@ function ItemPage() {
                     setClaimLoading(true);
                     try {
                       await axios.post(
-                        "http://localhost:4000/items/claim-request",
+                        "https://lost-found-backend-qt0o.onrender.com/items/claim-request",
                         { itemId: item._id },
                         {
                           headers: {
@@ -533,7 +533,7 @@ function ItemPage() {
                                   onClick={async () => {
                                     try {
                                       await axios.post(
-                                        `http://localhost:4000/items/claim-request/accept`,
+                                        `https://lost-found-backend-qt0o.onrender.com/items/claim-request/accept`,
                                         {
                                           itemId: item._id,
                                           userId: req.userId._id || req.userId,
@@ -564,7 +564,7 @@ function ItemPage() {
                                   onClick={async () => {
                                     try {
                                       await axios.post(
-                                        `http://localhost:4000/items/claim-request/decline`,
+                                        `https://lost-found-backend-qt0o.onrender.com/items/claim-request/decline`,
                                         {
                                           itemId: item._id,
                                           userId: req.userId._id || req.userId,
