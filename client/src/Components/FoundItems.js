@@ -61,7 +61,7 @@ export default function FoundItems() {
 
   useEffect(() => {
     axios({
-      url: "http://localhost:4000/items",
+      url: "https://lost-found-backend-qt0o.onrender.com/items",
       method: "GET",
     })
       .then((response) => {
