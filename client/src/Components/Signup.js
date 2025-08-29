@@ -59,7 +59,7 @@ function Signup() {
                 img: imgUrl,
               };
               await axios
-                .post("http://localhost:4000/users/create", payload)
+                .post("https://lost-found-backend-qt0o.onrender.com/users/create", payload)
                 .then((response) => {
                   setInfo(response.data);
                   if (response.data && response.data.ok) {
