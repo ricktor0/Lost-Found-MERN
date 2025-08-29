@@ -23,7 +23,9 @@
     "jwt-decode": "^3.1.2",
     "mongoose": "^6.9.1",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.20",
     "npm": "^9.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
