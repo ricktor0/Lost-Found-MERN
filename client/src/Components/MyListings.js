@@ -64,7 +64,7 @@ export default function Feed() {
   useEffect(() => {
     // console.log("Test");
     Axios({
-      url: "http://localhost:4000/items",
+      url: "https://lost-found-backend-qt0o.onrender.com/items",
       method: "GET",
     })
       .then((response) => {
